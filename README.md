@@ -6,9 +6,10 @@
 
 Vancouver, BC · Open to full-time roles in AI Automation, AI Applications, Data Science, and Data / Business Analytics in Canada
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/junxian-lin-89127a371/)
-[![Website](https://img.shields.io/badge/Personal_Website-Visit-111111?style=flat)](https://lykenl.github.io/Personal-Website/)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:jinxl2361418252@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/junxian-lin-89127a371/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-111111?style=for-the-badge)](https://lykenl.github.io/Personal-Website/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jinxl2361418252@gmail.com)
+[![Open to Work](https://img.shields.io/badge/Open_to_Work-Canada-2ea44f?style=for-the-badge)](https://www.linkedin.com/in/junxian-lin-89127a371/)
 
 </div>
 
@@ -28,31 +29,32 @@ Vancouver, BC · Open to full-time roles in AI Automation, AI Applications, Data
 
 | Project | What it does | Stack | Outcome |
 | --- | --- | --- | --- |
-| **Capacity Management & RFP Platform — CGI** | Parses hundreds of unstructured Word documents (RFPs, consultant profiles) and turns them into a queryable capacity dashboard with AI assignment suggestions | Python, Azure OpenAI, FastAPI, React, Streamlit | Automated 80% of manual tasks in a document-heavy tracking process |
-| **Multi-agent Database Copilot** | Translates natural language into executable SQL and returns results through an automated pipeline | Python, SQL, TypeScript, React, Next.js, FastAPI | 75% task-completion rate across evaluated workflows; less dependence on IT tickets |
-| **Agentic RAG & Data Validation Pipeline** | Secure, automated information retrieval with LLM-as-a-Judge validation against source texts | Python, LLM, Sentence-Transformers | Outputs below 90% similarity are flagged for human review |
-| **Multimodal Classification — Qwen VLM** | Multimodal classification with a Qwen vision-language model | Qwen, Python, CUDA, VLMs, Supervised Learning | GPU-accelerated training and evaluation (Google Colab) |
-| **Visual Novel Narrative Classification** | Classifies dialogue sequences into six narrative-progression strategies | Python, CUDA, feature engineering, BERT, multi-task learning | Baseline-to-BERT progression, from TF-IDF / FastText to fine-tuned BERT |
-| **ESG Time-Series Modelling** | Panel VAR on a 47k+ observation panel, controlling for heterogeneity | Python, Stata, Econometrics | Interpretable, risk-aware empirical findings |
-| **Open source — Agenta** | Fixed cancellation handling in the agent runner (merged PR #7476) | TypeScript | Stops during resource acquisition now report as cancelled, not failed |
+| **CGI RFP Platform** | Parses unstructured RFPs & profiles into a queryable capacity dashboard + AI assignment suggestions | Python, Azure OpenAI, FastAPI, React | **80%** of manual tasks automated |
+| **[NL2SQL-Agent](https://github.com/LykenL/NL2SQL-Agent)** | NL → executable SQL + results, multi-agent pipeline with dual memory | Python, Next.js, FastAPI, ChromaDB | **75%** task-completion rate across evaluated workflows |
+| **[Agentic RAG & Validation](https://github.com/LykenL/multi-source-rag-support)** | Secure retrieval with LLM-as-a-Judge validation against source texts | Python, Sentence-Transformers, LLM Evaluation | Outputs below **90%** similarity flagged for human review |
+| **[Open source — Agenta](https://github.com/Agenta-AI/agenta/pull/7476)** | Fixed cancellation handling in the agent runner | TypeScript | Merged PR **#7476**; stops now report as cancelled, not failed |
 
 ### In more detail
 
 **CGI — Capacity Management & RFP Optimization Platform** (Apr–Jun 2026)  
-An end-to-end workflow automation pipeline, not a prototype: Generative AI and Python extract consultant skills from unstructured documents, a React / Streamlit dashboard lets stakeholders filter and query that data instantly, and the system suggests project assignments to support data-driven decisions.
+An end-to-end automation pipeline: Generative AI extracts consultant skills from unstructured documents, a React / Streamlit dashboard makes that data instantly queryable, and the system suggests project assignments for data-driven decisions.
 
-**Multi-agent Database Copilot** (Jun–Aug 2026) — [LykenL/NL2SQL-Agent](https://github.com/LykenL/NL2SQL-Agent)  
-An AI copilot that turns a plain-language question into SQL, runs it, and returns the answer — built for teams that should not have to file a ticket for every routine data question.
+**Multi-agent Database Copilot** (Jun–Aug 2026)  
+A copilot that turns a plain-language question into SQL, runs it, and returns the answer — built for teams that should not have to file a ticket for every routine data question.
 
-**Agentic RAG & Data Validation** (Jan–Apr 2026) — [LykenL/multi-source-rag-support](https://github.com/LykenL/multi-source-rag-support) · [LykenL/Recipe_RAG](https://github.com/LykenL/Recipe_RAG)  
+**Agentic RAG & Data Validation** (Jan–Apr 2026)  
 Retrieval is only half the problem; trust is the other half. This system cross-references generated answers against source texts and routes low-similarity outputs to a human, so automation does not quietly ship hallucinations.
 
 <details>
 <summary>More projects and research</summary>
 
+- **Multimodal Classification — Qwen VLM**: multimodal classification with a Qwen vision-language model, with GPU-accelerated training and evaluation (Google Colab).
+- **Visual Novel Narrative Classification**: classifies dialogue sequences into six narrative-progression strategies (Drift / Accumulate / Erode / Rupture / Uncover / Contest), from TF-IDF / FastText baselines to fine-tuned BERT with multi-task learning.
+- **ESG Time-Series Modelling**: Panel VAR on a 47k+ observation panel, controlling for heterogeneity, translated into interpretable, risk-aware insights.
 - **MIA-Vis** — [LykenL/MIA-Vis](https://github.com/LykenL/MIA-Vis): membership-inference exploration for vision-language models, built on behaviour-signal feature engineering and weighted ensembles.
 - **xml2redis** — [LykenL/xml2redis](https://github.com/LykenL/xml2redis): exports data from an XML config file into Redis (docker-compose + Python).
 - **Personal Website** — [LykenL/Personal-Website](https://github.com/LykenL/Personal-Website): the site linked at the top of this profile.
+- **Recipe_RAG** — [LykenL/Recipe_RAG](https://github.com/LykenL/Recipe_RAG): agentic RAG for recipes with ReAct tool-calling, guardrails, and LLM-as-a-Judge evaluation.
 
 </details>
 
@@ -73,11 +75,11 @@ Retrieval is only half the problem; trust is the other half. This system cross-r
 
 ## Experience
 
-**Operations and Data Management Intern — CITIC Bank International** · Sep–Nov 2024  
-Mapped legacy transaction-reporting processes, replaced manual Excel workflows with automated Python scripts, and engineered data-reconciliation pipelines that cross-reference core banking outputs with risk-management systems.
+**CITIC Bank International — Operations and Data Management Intern** · Sep–Nov 2024  
+Mapped legacy transaction reporting, replaced manual Excel workflows with automated Python scripts, and built reconciliation pipelines cross-referencing core banking outputs with risk-management systems.
 
-**Marketing Analytics Intern — Frontop Digital Creative** · Apr–Jul 2024  
-Collected bidding and competitor data, analysed competitor win rates and winning amounts over time, organised competitor, product, patent and award materials, and delivered Excel-based analysis to a direct supervisor.
+**Frontop Digital Creative — Marketing Analytics Intern** · Apr–Jul 2024  
+Collected bidding and competitor data, analysed win rates and winning amounts over time, and delivered Excel-based analysis of competitor, product, patent and award materials to a direct supervisor.
 
 ## Education
 
@@ -88,8 +90,8 @@ Collected bidding and competitor data, analysed competitor win rates and winning
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=LykenL&show_icons=true&hide_border=true&theme=transparent)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LykenL&layout=compact&hide_border=true&theme=transparent)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=LykenL&show_icons=true&hide_border=true&theme=tokyonight)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LykenL&layout=compact&hide_border=true&theme=tokyonight)
 
 [LinkedIn](https://www.linkedin.com/in/junxian-lin-89127a371/) · [Personal Website](https://lykenl.github.io/Personal-Website/) · jinxl2361418252@gmail.com
 
