@@ -30,7 +30,7 @@ Vancouver, BC · Open to full-time roles in AI Automation, AI Applications, Data
 | Project | What it does | Stack | Outcome |
 | --- | --- | --- | --- |
 | **CGI RFP Platform** | Parses unstructured RFPs & profiles into a queryable capacity dashboard + AI assignment suggestions | Python, Azure OpenAI, FastAPI, React | **80%** of manual tasks automated |
-| **[NL2SQL-Agent](https://github.com/LykenL/NL2SQL-Agent)** | NL → executable SQL + results, multi-agent pipeline with dual memory | Python, Next.js, FastAPI, ChromaDB | **75%** task-completion rate across evaluated workflows |
+| **[NL2SQL-Agent](https://github.com/LykenL/NL2SQL-Agent)** | Plain-language questions → SQL over a governed warehouse; the agent can only read published mart tables | Python, Next.js, FastAPI, BigQuery, dbt, Dagster | **0.750** execution accuracy on BIRD Mini-Dev (375/500) |
 | **[Agentic RAG & Validation](https://github.com/LykenL/multi-source-rag-support)** | Secure retrieval with LLM-as-a-Judge validation against source texts | Python, Sentence-Transformers, LLM Evaluation | Outputs below **90%** similarity flagged for human review |
 | **[Open source — Agenta](https://github.com/Agenta-AI/agenta/pull/7476)** | Fixed cancellation handling in the agent runner | TypeScript | Merged PR **#7476**; stops now report as cancelled, not failed |
 
@@ -39,8 +39,8 @@ Vancouver, BC · Open to full-time roles in AI Automation, AI Applications, Data
 **CGI — Capacity Management & RFP Optimization Platform** (Apr–Jun 2026)  
 An end-to-end automation pipeline: Generative AI extracts consultant skills from unstructured documents, a React / Streamlit dashboard makes that data instantly queryable, and the system suggests project assignments for data-driven decisions.
 
-**Multi-agent Database Copilot** (Jun–Aug 2026)  
-A copilot that turns a plain-language question into SQL, runs it, and returns the answer — built for teams that should not have to file a ticket for every routine data question.
+**Database Copilot on a governed warehouse** (Jun–Aug 2026)  
+A copilot that turns a plain-language question into SQL, runs it, and returns the answer together with the exact script that produced it, so a data team can check the result instead of trusting it. The warehouse underneath is a bronze → silver → gold pipeline with a data-quality gate; the agent is read-only and restricted to published gold tables both in code and at the IAM layer, and it explores a table catalogue on demand rather than being handed the whole schema. Benchmarked on BIRD Mini-Dev: **0.750** execution accuracy over 500 questions across 11 databases.
 
 **Agentic RAG & Data Validation** (Jan–Apr 2026)  
 Retrieval is only half the problem; trust is the other half. This system cross-references generated answers against source texts and routes low-similarity outputs to a human, so automation does not quietly ship hallucinations.
