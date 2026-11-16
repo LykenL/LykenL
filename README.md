@@ -39,7 +39,7 @@ Vancouver, BC · Open to full-time roles in AI Automation, AI Applications, Data
 **CGI — Capacity Management & RFP Optimization Platform** (Apr–Jun 2026)  
 An end-to-end automation pipeline: Generative AI extracts consultant skills from unstructured documents, a React / Streamlit dashboard makes that data instantly queryable, and the system suggests project assignments for data-driven decisions.
 
-**Database Copilot on a governed warehouse** (Jun–Aug 2026)  
+**Database Copilot on a governed warehouse** (Jun–Nov 2026)  
 A copilot that turns a plain-language question into SQL, runs it, and returns the answer together with the exact script that produced it, so a data team can check the result instead of trusting it. The warehouse underneath is a bronze → silver → gold pipeline with a data-quality gate; the agent is read-only and restricted to published gold tables both in code and at the IAM layer, and it explores a table catalogue on demand rather than being handed the whole schema. Benchmarked on BIRD Mini-Dev: **0.750** execution accuracy over 500 questions across 11 databases.
 
 **Agentic RAG & Data Validation** (Jan–Apr 2026)  
