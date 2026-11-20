@@ -90,8 +90,8 @@ Collected bidding and competitor data, analysed win rates and winning amounts ov
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=LykenL&show_icons=true&hide_border=true&theme=tokyonight)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=LykenL&layout=compact&hide_border=true&theme=tokyonight)
+![GitHub stats](./profile/stats.svg)
+![Top languages](./profile/top-langs.svg)
 
 [LinkedIn](https://www.linkedin.com/in/junxian-lin-89127a371/) · [Personal Website](https://lykenl.github.io/Personal-Website/) · jinxl2361418252@gmail.com
 
